@@ -64,7 +64,6 @@ elif(signal == "green"):
 else:
    print("invalid signal")
 
-
 username= "irfan"
 password = "python121"
 if(username == "irfan" and password == "python121"):
