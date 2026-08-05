@@ -1,0 +1,11 @@
+group = {"pyython","linux","git",2,2,4,}
+print(group)
+group.add(5)
+print(group)
+group.remove(2)
+print(group)
+
+set1 = {1,2,3}
+set2 = {3,4,5}
+print(set1.union(set2))
+print(set1.intersection(set2))

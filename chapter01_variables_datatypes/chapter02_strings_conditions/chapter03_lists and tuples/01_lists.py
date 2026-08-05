@@ -61,5 +61,5 @@ print(fruits[0:3])
 print(fruits[1:3])
 fruits[1] = "kivi"
 print(fruits)
-fruits[3] = "grapes"
+fruits[3] = "grapes" 
 print(fruits)

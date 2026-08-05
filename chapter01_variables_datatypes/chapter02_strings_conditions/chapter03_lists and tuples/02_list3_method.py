@@ -4,6 +4,8 @@
 # Author : Irfan Ali
 # ====================================
 
+#example 1 : append
+
 fruits = ["apple","banana"]
 print(fruits)
 fruits.append("mango")
@@ -32,6 +34,7 @@ fruits = ["banana","mango","apple", "blueberry", "pear","kivi"]
 fruits.sort()
 print(fruits)
 
+#example 6 : sort.reverse
 
 fruits = ["banana","mango", "pear","apple","kivi", "blueberry"]
 fruits.sort(reverse=True)
@@ -39,11 +42,13 @@ print(fruits)
 
 
 
-#example 5 : reverse
+#example 7 : reverse
 
 fruits = ["banana","mango","apple", "blueberry"]
 fruits.reverse()
 print(fruits)
+
+#example 8 : clear
 
 fruits = ["banana","mango","apple", "blueberry"]
 fruits.clear()
