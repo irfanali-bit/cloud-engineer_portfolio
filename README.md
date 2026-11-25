@@ -48,4 +48,13 @@ I am learning AWS Cloud Engineering through practical labs and projects. My goal
 
 ## Note
 
-These are personal hands-on learning projects, not professional work experience.
+These are personal hands-on learning projects, not professional work experience.    
+## Three-Tier Web Architecture on AWS
+
+Built and verified a Three-Tier Architecture in `ap-south-1` (Mumbai):
+
+- **Networking:** Custom VPC (`three-tier-vpc`) with Public and Private Subnets (`ap-south-1a`, `ap-south-1b`), Internet Gateway, and Route Tables.
+- **Security Groups:** `alb-sg` (HTTP 80 from `0.0.0.0/0`), `web-sg` (HTTP 80 from `alb-sg`), and `db-sg` (MySQL 3306 from `web-sg`).
+- **Web & ALB Tier:** EC2 instance running Nginx behind an Application Load Balancer (`three-tier-alb`) and Target Group (`web-tg`).
+- **Database Tier:** Amazon RDS MySQL (`three-tier-db`) in Private Subnets (`Public access: No`).
+- **Proof & Cleanup:** Screenshots added in the [`images/`](./images) folder. All AWS resources were deleted after testing to avoid extra cost.
